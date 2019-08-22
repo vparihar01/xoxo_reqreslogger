@@ -303,7 +303,7 @@ module.exports = function morganBody(app, options) {
       if (dateTimeFormat) formatString += `[${dateTimeFormat}]`;
       if (logReqDateTime && logReqUserAgent) formatString += ',';
       if (logReqUserAgent) formatString += ' ' + userAgentColor + 'User Agent: :user-agent' + defaultColor;
-      //formatString+=" xoxo-correlation-id: "+res.get('xoxo-correlation-id');
+      formatString+=" xoxo-correlation-id: "+res.get('xoxo-correlation-id');
       fn = developmentFormatLine.func = compile(formatString);
     }
 
