@@ -296,6 +296,7 @@ module.exports = function morganBody(app, options) {
             formatString += `${logReqHeaderList[i]}=:req[${logReqHeaderList[i]}];`;
           }
           formatString += ']';
+          formatString+='xoxo-correlation-id: '+JSON.stringify(res.get(headers));
         }
       }
       if (logReqDateTime) formatString += ' ' + userAgentColor + 'at ' + dateColor + ':date';
