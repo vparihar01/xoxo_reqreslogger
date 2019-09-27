@@ -186,7 +186,7 @@ function bodyToString(maxBodyLength, prettify, prependStr, body, bodyActionColor
 module.exports = function morganBody(app, options) {
   // default options
   options = options || {};
-  var maxBodyLength = options.hasOwnProperty('maxBodyLength') ? options.maxBodyLength : 1000;
+  var maxBodyLength = options.hasOwnProperty('maxBodyLength') ? options.maxBodyLength : 10000;
   var logReqDateTime = options.hasOwnProperty('logReqDateTime') ? options.logReqDateTime : true;
   var logAllReqHeader = options.hasOwnProperty('logAllReqHeader') ? options.logAllReqHeader : true;
   var logAllResHeader = options.hasOwnProperty('logAllResHeader') ? options.logAllResHeader : false;
