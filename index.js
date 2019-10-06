@@ -626,7 +626,7 @@ morgan.token('user-agent', function getUserAgentToken(req) {
  */
 
 morgan.token('req', function getRequestToken(req, res, field) {
-  // get header
+  // get headers
   var header = req.headers[field.toLowerCase()];
 
   return Array.isArray(header)
