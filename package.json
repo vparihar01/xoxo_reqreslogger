@@ -25,7 +25,7 @@
     "logging",
     "logger"
   ],
-  "license": "ISC",
+  "license": "GPL-3.0",
   "main": "index.js",
   "name": "xoxo_reqreslogger",
   
